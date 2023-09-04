@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Aplikasi Administrasi Bumdes Desa Onto">
+        <meta name="keywords" content="PHP, CSS, JavaScript">
+        <meta name="author" content="Kelompok 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bumdes Desa Onto - Beranda</title>
+        <link rel="stylesheet" type="text/css" href="frontend/css/w3.css">
+        <link rel="stylesheet" type="text/css" href="frontend/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="frontend/css/w3color.css">
+        <link rel="icon" type="image/x-icon" href="frontend/img/logo_bumdes_desa_onto.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif;}
+
+            body, html {
+                height: 100%;
+                line-height: 1.8;
+            }
+
+            /* Tinggi gambar header full */
+            .bgimg-1 {
+                background-position: center;
+                background-size: cover;
+                background-image: url("frontend/img/bg-img.jpg");
+                min-height: 100%;
+            }
+
+            .w3-bar .w3-button {
+                padding: 16px;
+            }
+        </style>
+    </head>
+<body class="w3-light-grey">
+    <!-- Navbar (tetap di atas) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-green w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-wide"><img src="frontend/img/logo_bumdes_desa_onto.png" class="w3-hover-grayscale" style="width:50px"></a>
+            <!-- Sisi-kiri navbar links -->
+            <div class="w3-left w3-hide-small">
+                <a href="#profil_desa_onto" class="w3-bar-item w3-button"> PROFIL DESA ONTO</a>
+                <a href="#visi&misi" class="w3-bar-item w3-button"> VISI & MISI</a>
+                <a href="#timkami" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TIM KAMI</a>
+                <a href="#kontak" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAK</a>
+            </div>
+            <!-- Sisi-kanan navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="login/" class="w3-bar-item w3-button"><i class="fa fa-user"></i> MASUK</a>
+            </div>
+            <!-- Kanan-mengambang link di layar kecil sembunyi dan memasang dengan icon menu -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+    <!-- Sidebar di layar kecil ketika klik icon menu -->
+    <nav class="w3-sidebar w3-bar-clock w3-green w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Tutup x</a>
+        <a href="#profil_desa_onto" onclick="w3_close()" class="w3-bar-item w3-button"> PROFIL DESA ONTO</a>
+        <a href="#visi&misi" onclick="w3_close()" class="w3-bar-item w3-button"> VISI & MISI</a>
+        <a href="#timkami" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TIM KAMI</a>
+        <a href="#kontak" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAK</a>
+        <a href="login/" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user"></i> MASUK</a>
+    </nav>
+
+    <!-- Header dengan gambar tinggi-full -->
+    <header class="bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px;">
+            <span class="w3-jumbo w3-hide-small w3-text-black">Selamat Datang di Sistem Informasi Administrasi!</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-text-black">Selamat Datang di Sistem Informasi Administrasi!</span><br>
+            <span class="w3-large w3-text-black">Badan Usaha Milik Desa - Desa Onto, Kabupaten Selayar</span>
+            <p><a href="#profil_desa_onto" class="w3-button w3-green w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Mulai Sekarang</a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px;">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+        </div>
+    </header>
+    
+    <!-- Tentang Section -->
+    <div class="w3-container" style="padding:128px 16px" id="profil_desa_onto">
+        <h3 class="w3-center">PROFIL DESA ONTO</h3>
+        <p class="w3-center w3-large">Desa yang penuh ramah lingkungan (contoh)</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Latar Belakang</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, sapiente?</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-map-marker w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Lokasi</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nemo cumque dolorum facere rem recusandae ullam enim totam dicta repudiandae.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-map-signs w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Kabupaten Sulawesi Selatan</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quo iste laboriosam accusamus odio voluptates rem sed culpa quam quisquam.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-photo w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Tempat Wisata</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, tempore possimus maxime dolor, eaque doloremque mollitia iusto iste quia voluptatum similique aspernatur iure tempora optio velit dolores sequi error minus!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Visi & Misi Section -->
+    <div class="w3-container w3-white" style="padding:128px 16px;" id="visi&misi">
+        <h3>Visi & Misi</h3>
+        <p>Visi: Mewujudkan Desa Onto sebagai daerah yang maju dan modern. (contoh)</p>
+        <p>Misi: Untuk memenuhi tugas project kelompok 1. (contoh)</p>
+        <p><a href="#timkami" class="w3-button w3-green"><i class="fa fa-users"></i> Lihat Tim Kami</a></p>
+    </div>
+
+    <!-- Tim Kami Section -->
+    <div class="w3-container" style="padding:128px 16px;" id="timkami">
+        <h3 class="w3-center">TIM KAMI</h3>
+        <p class="w3-center w3-large">The chosen one yang menjalani project ini</p>
+        <div class="w3-row-padding " style="margin-top:64px;">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="/" alt="fiqri" style="width:100%;">
+                    <div class="w3-container">
+                    <h3>Fiqri Irwan</h3>
+                    <p class="w3-opacity">Designers & Leader</p>
+                    <p>Karakter yang tidak begitu jelas. Imajinasi adalah kekuatannya.</p>
+                    <p><button class="w3-button w3-green w3-block"><i class="fa fa-envelope"></i> Kontak</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="/" alt="zia" style="width:100%;">
+                    <div class="w3-container">
+                    <h3>Nur Azizia Maserang</h3>
+                    <p class="w3-opacity">Maker UML Design & Co-Leader</p>
+                    <p>Pekerja keras dan menghalalkan segala cara untuk mencapai impiannya.</p>
+                    <p><button class="w3-button w3-green w3-block"><i class="fa fa-envelope"></i> Kontak</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="/" alt="rehan" style="width:100%;">
+                    <div class="w3-container">
+                    <h3>Muh. Rehan</h3>
+                    <p class="w3-opacity">Maker UML Design & Member</p>
+                    <p>Misterius & Bisa saja dia hantu yang menyamar jadi satpam.</p>
+                    <p><button class="w3-button w3-green w3-block"><i class="fa fa-envelope"></i> Kontak</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="/" alt="risal" style="width:100%;">
+                    <div class="w3-container">
+                    <h3>Risaldi Hamka</h3>
+                    <p class="w3-opacity">Member Project</p>
+                    <p>Tujuannya hanya satu, yang penting selesai.</p>
+                    <p><button class="w3-button w3-green w3-block"><i class="fa fa-envelope"></i> Kontak</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontak Kami -->
+    <div class="w3-container w3-white" style="padding:128px 16px;" id="kontak">
+        <h3 class="w3-center">KONTAK</h3>
+        <p class="w3-center w3-large">Jika ada pertanyaan. Kirim pesan kepada kami:</p>
+        <div style="margin-top:48px;">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Desa Onto, Kabupaten Selayar</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +62 1234567</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: mail@gmail.com</p>
+            <br>
+            <form action="action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Nama" required name="nama"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Judul" required name="judul"></p>
+                <p><textarea class="w3-textarea w3-border" name="pesan" placeholder="Ketik pesan di sini... " style="height:200px" required></textarea></p>
+                <p><button class="w3-button w3-green" type="submit"><i class="fa fa-paper-plane"></i> KIRIM PESAN</button></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-green w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Kembali ke atas</a>
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+      </div>
+      <p>@copyrightprojectkelompok1</p>
+    </footer>
+    <!-- End page content -->
+<script src="frontend/js/script.js"></script>
+</body>
+</html>

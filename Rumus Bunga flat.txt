@@ -1,0 +1,8 @@
+Pokok Pinjaman : input!
+Lama Pinjaman : input! (1-12)
+Total Pinjaman : pokok_pinjaman / lama_pinjaman
+
+Bunga% : input! (1-100) 
+Bunga pertahun : (bunga/100) * pokok_pinjaman
+Bunga perbulan : bunga_pertahun / lama_pinjaman
+Besarnya Pinjaman : total_pinjaman + bunga_perbulan 

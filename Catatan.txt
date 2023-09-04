@@ -1,0 +1,15 @@
+Kelompok 1
+Nama : Muhammad Fiqri (202021053)
+	Nur Azizia Maserang
+	Risaldi Hamka
+	Muh. Rehan
+Kelas :IK-37
+Matkul : APS
+
+Untuk membuka website beranda bumdes
+localhost/webapladministrasibumdes
+
+Untuk akses login:
+nip: admin
+password : admin123
+
