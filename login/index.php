@@ -6,7 +6,7 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Kelompok 1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Administrasi Bumdes Desa Onto</title>
+        <title>Login Administrasi Bumdes</title>
         <script type = "text/javascript" >  
             function preventBack() { window.history.forward(); }  
             setTimeout("preventBack()", 0);  
@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="../frontend/css/w3.css">
         <link rel="stylesheet" type="text/css" href="../frontend/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../frontend/css/w3color.css">
+        <link rel="icon" type="image/x-icon" href="../frontend/img/icon-app.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap");
